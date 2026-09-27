@@ -1,0 +1,61 @@
+DB WORKSPACE (dbws) - FREEWARE LICENSE
+
+Copyright (c) 2026 Nitin Kokane. All rights reserved.
+
+The Software is free of charge. This is not an open-source license: the source code is not licensed to you.
+
+1. Definitions
+   "Software" means the dbws package (the `db` command, its local web UI, MCP server, engine resources, workspace
+   scaffold and documentation) in the version you received. "You" means the person or organisation using it.
+
+2. What you may do
+   (a) Install and use the Software, free of charge, on any number of devices, for any purpose, including
+       commercial database development work for yourself or your employer or clients.
+   (b) Give unmodified, complete copies of the Software to others, provided you charge nothing for it and keep
+       this license and all notices with it.
+
+3. What you may not do
+   Except as expressly permitted above or by applicable law that cannot be excluded, you may not:
+   (a) sell, rent, lease or sublicense the Software, or charge for distributing it;
+   (b) modify it, or distribute modified versions or works derived from its code;
+   (c) decompile, disassemble or reverse engineer it, beyond reading the files as installed;
+   (d) remove or alter copyright, license or attribution notices;
+   (e) offer it to third parties as a hosted or managed service.
+
+4. Your workspace content
+   Everything the Software creates in your workspaces (configuration, task scripts, schema snapshots,
+   documentation generated from your databases, support reports) belongs to you. The workspace scaffold files
+   (AGENTS.md, docs, templates, hooks) may be modified and shared freely.
+
+5. Data and privacy
+   The Software runs on your devices and sends no telemetry to the copyright holder. Database credentials are
+   stored in your operating system's credential vault. The optional chat feature sends prompts, schema information
+   and capped query results to Anthropic's API using your own API key, under your own agreement with Anthropic.
+   You decide whether that is acceptable for your data.
+
+6. Third-party components
+   The Software includes or depends on open-source components under their own licenses, listed in
+   THIRD_PARTY_NOTICES.md. Those licenses govern those components.
+
+7. Safety features; your responsibility
+   The Software includes safeguards (read-only gates, dry runs, typed confirmations, production controls). They
+   reduce but do not eliminate risk. You remain responsible for reviewing changes, keeping backups, and every change
+   you execute against your databases.
+
+8. No warranty
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY,
+   FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT.
+
+9. Limitation of liability
+   TO THE EXTENT PERMITTED BY LAW, THE COPYRIGHT HOLDER SHALL NOT BE LIABLE FOR ANY DAMAGES OF ANY KIND ARISING FROM
+   THE USE OF, OR INABILITY TO USE, THE SOFTWARE, INCLUDING LOSS OF DATA, PROFITS OR BUSINESS.
+
+10. Future versions
+    This license covers the version you received. Later versions may be offered under different terms, including
+    paid terms; the version you already have remains covered by this license.
+
+11. Termination
+    This license ends automatically if you breach it. You must then stop using and delete the Software. Your
+    workspace content (section 4) remains yours.
+
+Contact: nitinkokane3@gmail.com
