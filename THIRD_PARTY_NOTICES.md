@@ -29,6 +29,9 @@ When you update a vendored file, update this table and keep the file's license h
 | python-multipart | ui | Apache-2.0 |
 | httpx | ui | BSD-3-Clause |
 | anthropic | chat | MIT |
+| openai | chat | Apache-2.0 |
+| boto3, botocore (via anthropic[bedrock]) | chat-bedrock | Apache-2.0 |
+| google-auth (via anthropic[vertex]) | chat-vertex | Apache-2.0 |
 
 Their transitive dependencies carry their own licenses; `pip-licenses` in an installed environment lists them all.
-Licenses as reported by the package metadata at release 0.9.0; re-check when dependency ranges change.
+Licenses as reported by the package metadata; re-check when dependency ranges change.

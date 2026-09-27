@@ -7,10 +7,10 @@ without being able to change your data.
 
 Free to use, including for work. Closed source: this repository only hosts the releases.
 
-## Install (latest: 0.9.2)
+## Install (latest: 0.10.0)
 
 ### Windows installer (no Python needed)
-Download **DBWorkspace-0.9.2-setup.exe** from the [latest release](https://github.com/nitinkokane3/dbws-releases/releases/latest)
+Download **DBWorkspace-0.10.0-setup.exe** from the [latest release](https://github.com/nitinkokane3/dbws-releases/releases/latest)
 and run it. It installs for your user only (no admin rights) and puts `db` on your PATH: open a new terminal and run
 `db --version`. It offers the Microsoft ODBC Driver 18 download if you need SQL Server and don't have it.
 The installer is not code-signed yet, so Windows SmartScreen shows "Windows protected your PC": choose
@@ -22,11 +22,11 @@ Needs Python 3.10+ and git. For SQL Server also Microsoft ODBC Driver 18.
 
 ```powershell
 # recommended: pipx puts `db` on your PATH in its own environment (https://pipx.pypa.io)
-pipx install "dbws[all] @ https://github.com/nitinkokane3/dbws-releases/releases/download/v0.9.2/dbws-0.9.2-py3-none-any.whl"
+pipx install "dbws[all] @ https://github.com/nitinkokane3/dbws-releases/releases/download/v0.10.0/dbws-0.10.0-py3-none-any.whl"
 
 # or in a virtual environment
 python -m venv .venv
-.venv\Scripts\pip install "dbws[all] @ https://github.com/nitinkokane3/dbws-releases/releases/download/v0.9.2/dbws-0.9.2-py3-none-any.whl"
+.venv\Scripts\pip install "dbws[all] @ https://github.com/nitinkokane3/dbws-releases/releases/download/v0.10.0/dbws-0.10.0-py3-none-any.whl"
 ```
 
 Extras: `sqlserver`, `postgres`, `mysql`, `mcp`, `ui`, `chat`, or `all`.
@@ -50,8 +50,9 @@ run `db init --refresh` in each workspace and review the changes with `git diff`
 
 Everything runs on your machine: no telemetry, no account. Update checks happen only when you run
 `db doctor --check-updates` (one anonymous request to GitHub for the latest version number). Credentials stay in the operating system's credential
-vault. The optional chat sends questions, schema information and capped query results to Anthropic's API with your
-own key; leave out the `chat` extra if that is not acceptable for your data.
+vault. The optional chat sends questions, schema information and capped query results to the AI provider you
+choose (Anthropic, OpenAI, Azure OpenAI, Gemini, Qwen, Claude on Bedrock or Vertex) with your own key, or to a local
+model (Ollama, LM Studio) so that nothing leaves your machine.
 
 ## License, support
 
