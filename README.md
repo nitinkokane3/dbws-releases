@@ -7,17 +7,26 @@ without being able to change your data.
 
 Free to use, including for work. Closed source: this repository only hosts the releases.
 
-## Install (latest: 0.9.0)
+## Install (latest: 0.9.1)
 
+### Windows installer (no Python needed)
+Download **DBWorkspace-0.9.1-setup.exe** from the [latest release](https://github.com/nitinkokane3/dbws-releases/releases/latest)
+and run it. It installs for your user only (no admin rights) and puts `db` on your PATH: open a new terminal and run
+`db --version`. It offers the Microsoft ODBC Driver 18 download if you need SQL Server and don't have it.
+The installer is not code-signed yet, so Windows SmartScreen shows "Windows protected your PC": choose
+**More info → Run anyway**, after checking the file against `SHA256SUMS` if you like. Uninstall from
+Settings → Apps. Also install [git](https://git-scm.com) (workspaces are git repositories).
+
+### With Python (Windows, Linux, macOS)
 Needs Python 3.10+ and git. For SQL Server also Microsoft ODBC Driver 18.
 
 ```powershell
 # recommended: pipx puts `db` on your PATH in its own environment (https://pipx.pypa.io)
-pipx install "dbws[all] @ https://github.com/nitinkokane3/dbws-releases/releases/download/v0.9.0/dbws-0.9.0-py3-none-any.whl"
+pipx install "dbws[all] @ https://github.com/nitinkokane3/dbws-releases/releases/download/v0.9.1/dbws-0.9.1-py3-none-any.whl"
 
 # or in a virtual environment
 python -m venv .venv
-.venv\Scripts\pip install "dbws[all] @ https://github.com/nitinkokane3/dbws-releases/releases/download/v0.9.0/dbws-0.9.0-py3-none-any.whl"
+.venv\Scripts\pip install "dbws[all] @ https://github.com/nitinkokane3/dbws-releases/releases/download/v0.9.1/dbws-0.9.1-py3-none-any.whl"
 ```
 
 Extras: `sqlserver`, `postgres`, `mysql`, `mcp`, `ui`, `chat`, or `all`.
